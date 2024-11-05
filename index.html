@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Verb "To Be"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- Instructions screen -->
+    <div class="instructions-container" id="instructions-container">
+        <h3>How to Play:</h3>
+        <p>Drag the correct form of "to be" into the blank space to complete the sentence.</p>
+        <p>Score points for each correct answer!</p>
+        <p>Good luck!</p>
+    </div>
+
+    <!-- Login screen -->
+    <div class="login-container" id="login-container">
+        <h2>Welcome to the verb Game "To Be"!</h2>
+        <input type="text" id="username" placeholder="Write your name">
+        <button onclick="startGame()">Go</button>
+    </div>
+
+    <!-- Main game container -->
+    <div class="game-container" id="game-container" style="display: none;">
+        <h1>Complete the sentence with "To Be"</h1>
+        <h2 id="greeting">Hello!</h2>
+        
+        <!-- Show current level -->
+        <h2 id="level">Level: 1</h2>
+        
+        <!-- Sentence with blank -->
+        <div class="sentence">
+            <p id="sentence"><span id="blank" class="dropzone">__</span></p>
+        </div>
+        
+        <!-- Drag options -->
+        <div class="options">
+            <p class="draggable" draggable="true" id="option1"></p>
+            <p class="draggable" draggable="true" id="option2"></p>
+            <p class="draggable" draggable="true" id="option3"></p>
+            <p class="draggable" draggable="true" id="option4"></p>
+            <p class="draggable" draggable="true" id="option5"></p>
+        </div>
+        
+        <!-- Result -->
+        <div id="result" class="result"></div>
+        
+        <!-- Score -->
+        <h3 id="score">Points: 0</h3>
+    </div>
+    <div id="score">Points: 0</div>
+
+    <!-- Congratulations screen -->
+    <div id="congratulationsScreen" class="imagen3" style="display: none;">
+        <img src="Recursos/up.gif" class="pop">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

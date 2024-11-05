@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('img.0.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor de Login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+.login-container h2 {
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+.login-container input {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 85%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-container button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #357ABD;
+}
+
+.game-container {
+    width: 90%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    display: none;
+}
+
+h1, h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.sentence {
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+.dropzone {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a90e2;
+    border-bottom: 2px dashed #4a90e2;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropzone:hover {
+    background-color: rgba(74, 144, 226, 0.1);
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.draggable {
+    padding: 12px 25px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: grab;
+    transition: background-color 0.3s;
+}
+
+.draggable:hover {
+    background-color: #357ABD;
+}
+
+/* Colores para respuestas correctas e incorrectas */
+.result.correct {
+    color: #4CAF50; /* Verde para respuestas correctas */
+}
+
+.result.incorrect {
+    color: #E74C3C; /* Rojo para respuestas incorrectas */
+}
+
+/* Estilos adicionales para un mejor aspecto */
+.pop {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Animaciones para resultados */
+.result {
+    font-size: 18px;
+    margin-top: 15px;
+    transition: opacity 0.5s;
+    opacity: 1; /* Asegura que el resultado sea visible */
+}
+
+/* Estilo para GIF */
+.gif {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* Ajusta según sea necesario */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Contenedor de instrucciones */
+.instructions-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 250px; /* Ajusta según sea necesario */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+.instructions-container h3 {
+    color: #4a90e2;
+}
+
+.instructions-container p {
+    color: #333;
+}
